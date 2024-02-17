@@ -3,13 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Greenline Paribahan</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+    <header class="lg:w-10/12 mx-auto">
+        <nav class="mt-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="st  font-bold text-xl lg:text-3xl">Greenline-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-base font-medium"><a>Home</a></li>
+                    <li class="text-base font-medium"><a>About</a></li>
+                    <li class="text-base font-medium"><a>Destination</a></li>
+                    <li class="text-base font-medium"><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn items-center bg-green-100 text-[#1DD100] text-base">Bus <img src="assets/images/bus-icon.png" alt=""></a>
+                </div>
+              </div>
+        </nav>
+        <section class="lg:mt-14 mt-4  ">
+            <div class="hero rounded-3xl overflow-hidden w-full min-h-full object-cover" style="background-image: url(assets/images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-3xl h-full">
+                    <h1 class="mb-5 text-white lg:text-5xl text-3xl lg:pt-9 pt-4 font-bold tracking-widest  ">
+                        <span class="">End-to-End Travel with</span>
+                        <span class=" text-[#1DD100]">Greenline Paribahan</span> </h1>
+                    <p class="mb-5">Green Line Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
+                    <button class="btn font-bold px-3 mb-28 border-none bg-[#1DD100]">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:flex hidden space-x-24 justify-center absolute bottom-24 pl-44">
+                <div class="flex items-center  bg-white py-2 px-2 shadow-sm rounded-3xl shadow-[#1DD100] ">
+                    <img src="assets/images/people.png" alt="">
+                    <span class="text-center px-3">
+                        <h1 class="font-bold text-3xl">500K+</h1>
+                        <p>Registered users</p>
+                    </span>
+                </div>
+                <div class="flex items-center bg-white py-2 px-2 shadow-sm rounded-3xl shadow-[#1DD100] ">
+                    <img src="assets/images/ticket-cupon.png" alt="">
+                    <span class="text-center px-3">
+                        <h1 class="font-bold text-3xl">1.7 lacks</h1>
+                        <p>Tickets sold</p>
+                    </span>
+                </div>
+                <div class="flex items-center bg-white py-4 px-2 shadow-sm rounded-3xl shadow-[#1DD100]">
+                    <img src="assets/images/stoppage.png" alt="">
+                    <span class="text-center px-3">
+                        <h1 class="font-bold text-3xl">1.7 lacks</h1>
+                        <p>Rental partners</p>
+                    </span>
+                </div>
+              </div>
+        </section>
+    </header>
+    <main></main>
+    <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>
