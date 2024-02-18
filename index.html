@@ -283,10 +283,16 @@
                             <h1>Total Price</h1>
                             <h1>BDT <span id="totalPriceContainer">0000</span></h1>
                         </span>
-                        <span class="bg-white w-full  inline-block py-1 rounded-2xl">
-                            <input class="bg-none px-2 lg:w-9/12  border-none outline-none" type="text"  placeholder="Have any Coppon?">
-                            <button class="px-7 rounded-2xl  py-3 lg:ml-3 bg-[#1DD100]">Apply</button>
-                        </span>
+                        <div>
+                            <span id="span" class="bg-white  w-full  inline-block py-1 rounded-2xl">
+                                <input id="inputText" class="bg-none px-2 lg:w-9/12  border-none outline-none" type="text"  placeholder="Have any Coppon?">
+                                <button id="applyBtn" class="px-7 rounded-2xl  py-3 lg:ml-3 text-white bg-[#1DD100]" disabled>Apply</button>
+                            </span>
+                            <span id="span2" class="flex hidden justify-between font-medium">
+                                <h1>Discount</h1>
+                                <p><span id="discounValue">000</span>Tk</p>
+                            </span>
+                        </div>
                         <span class="flex justify-between py-2 font-medium">
                             <h1>Grand Total </h1> 
                             <h1>BDT <span id="grandTotal">0000</span></h1>
@@ -332,7 +338,7 @@
         </section>
        
     </main>
-    <footer class=" lg:px-28 py-10  bg-neutral  text-white">
+    <footer class=" lg:px-28 py-10  bg-black  text-white">
         <div class="flex lg:flex-row flex-col justify-between items-center w-full border-b-2 border-gray-400 pb-4">
             <aside>
                 <h1 class="text-3xl font-medium pb-3">Greenline-Ticket</h1>

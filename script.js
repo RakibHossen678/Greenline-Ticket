@@ -83,11 +83,51 @@ document.getElementById('number').addEventListener('keyup',function(e){
      numValue=(e.target.value)
      if(numValue.length >= 1 && count>=1){
         document.getElementById('nextBtn').removeAttribute('disabled');
+       
     }
     
 })
 
 
-// const number = ;
-// let numValue=parseInt(number.value)
-// console.log(numValue);
+document.getElementById('inputText').addEventListener('keyup',function(e){
+     let numValue=(e.target.value)
+     if(count===4){
+        if(numValue === 'NEW15' || numValue==='Couple 20'){
+            document.getElementById('applyBtn').removeAttribute('disabled');
+        }
+
+     }
+     else{
+        alert('You have to select at least 4 tickets')
+    }
+    
+})
+
+
+
+
+document.getElementById('applyBtn').addEventListener('click',function(){
+    const inputFieldValue=document.getElementById('inputText').value;
+    // console.log(inputFieldValue);
+    if(count===4){
+        if(inputFieldValue === 'NEW15'){
+            const discounValue= document.getElementById('discounValue');           
+            discounValue.innerText=total*15/100;
+            // console.log(discounValue.);
+            document.getElementById('grandTotal').innerText =  total - parseInt(discounValue.innerText);
+            document.getElementById('span').classList.add('hidden')                        
+            document.getElementById('span2').classList.remove('hidden')    
+        }  
+        else if(inputFieldValue==='Couple 20'){
+
+            const discounValue= document.getElementById('discounValue');           
+            discounValue.innerText=total*20/100;
+            document.getElementById('grandTotal').innerText= total - parseInt(discounValue.innerText);
+            document.getElementById('span').classList.add('hidden')                        
+            document.getElementById('span2').classList.remove('hidden')                        
+        }       
+       
+    }
+    
+
+})
