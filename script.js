@@ -7,9 +7,9 @@ let total=0;
 for (const seat of seatElement) {
     seat.addEventListener('click',function(){
 
-        seat.classList.add('bg-[#1DD100]');
+        if(count<4){
+            seat.classList.add('bg-[#1DD100]');
         seat.classList.add('text-white');
-        
         count += 1;
         const seatCount = document.getElementById('seatCount').innerText= count;
 
@@ -28,6 +28,7 @@ for (const seat of seatElement) {
         p2.innerText='Economy'
         const p3=document.createElement('p')
         p3.innerText='550TK'
+
 
       
         // div.classList.add('leading-loose')
@@ -48,7 +49,17 @@ for (const seat of seatElement) {
         grandTotal.innerText=total
 
         // console.log( totalPriceContainer);
+            
+        }
+        else{
+            alert("You can't select more than 4")           
 
+        }
+
+        
+        
+        
+        
 
 
 
@@ -58,7 +69,6 @@ for (const seat of seatElement) {
 }
 
 
-let numValue;
 document.getElementById('nextBtn').addEventListener('click' , function(){
     document.getElementById('success').classList.remove('hidden') ;
 
@@ -67,6 +77,8 @@ document.getElementById('continue').addEventListener('click' , function(){
     document.getElementById('success').classList.add('hidden') ;
 
 })
+
+let numValue;
 document.getElementById('number').addEventListener('keyup',function(e){
      numValue=(e.target.value)
      if(numValue.length >= 1 && count>=1){
