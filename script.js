@@ -60,16 +60,16 @@ for (const seat of seatElement) {
 
 let numValue;
 document.getElementById('nextBtn').addEventListener('click' , function(){
-    document.getElementById('nextBtn').classList.add('hidden')
-    
-    
+    document.getElementById('success').classList.remove('hidden') ;
 
-    
+})
+document.getElementById('continue').addEventListener('click' , function(){
+    document.getElementById('success').classList.add('hidden') ;
 
 })
 document.getElementById('number').addEventListener('keyup',function(e){
      numValue=(e.target.value)
-     if(numValue.length === 11 ){
+     if(numValue.length >= 1 && count>=1){
         document.getElementById('nextBtn').removeAttribute('disabled');
     }
     
