@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenline Paribahan</title>
+    <link rel="shortcut icon" href="assets/images/bus-icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -45,12 +46,12 @@
             <div class="hero rounded-3xl overflow-hidden w-full min-h-full object-cover" style="background-image: url(assets/images/banner.png);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
-                  <div class="max-w-3xl h-full">
+                  <div class="max-w-3xl h-full ">
                     <h1 class="mb-5 text-white lg:text-5xl text-3xl lg:pt-9 pt-4 font-bold tracking-widest  ">
                         <span class="">End-to-End Travel with</span>
                         <span class=" text-[#1DD100]">Greenline Paribahan</span> </h1>
                     <p class="mb-5">Green Line Paribahan is apparently a family owned transport company specializing in transportation of passenger bus services since 1990.</p>
-                    <button class="btn font-bold px-3 mb-28 border-none bg-[#1DD100]">Buy Tickets</button>
+                    <button id="buy-ticket" class="btn font-bold px-3 mb-28 border-none bg-[#1DD100]"><a href="#TicetSection" >Buy Tickets</a></button>
                   </div>
                 </div>
               </div>
@@ -117,7 +118,7 @@
 
         </section>
 
-        <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[55px] pb-16">
+        <section id="TicetSection"  class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[55px] pb-16">
             <div class="max-w-4xl text-center mx-auto pt-20 ">
                 <h1 class="text-4xl font-medium mb-4">Greenline Paribahan</h1>
                 <p>This platform specializes in bus ticket bookings and offers services in various countries. It allows you to search for buses based on routes, operators, and timings.</p>
@@ -136,7 +137,7 @@
                             </span>
                             <span class="flex items-center lg:px-4 rounded-xl lg:py-3 bg-green-300">
                                 <img src="assets/images/seat-green.png" alt="">
-                                <h1 class=" font-bold pl-2 text-[#1DD100]"><span>40 </span>Seats left</h1>
+                                <h1 class=" font-bold pl-2 text-[#1DD100]"><span id="seatsLeft">40 </span> Seats left</h1>
                             </span>
                         </div>
                         <div class="mt-3 bg-[#F7F8F8] px-7 py-7 rounded-3xl">
@@ -160,8 +161,8 @@
                         <img class="" src="assets/images/info-devider.png" alt="">
                     </div>
                     <div class="py-10 text-center">
-                        <img src="assets/images/fare.png" alt="">
-                        <h1 class="text-2xl font-medium"> 550 Taka </h1>
+                        <img class="mx-auto" src="assets/images/fare.png" alt="">
+                        <h1 class="text-2xl font-medium"> <span id="ticketPrice">550</span> Taka </h1>
                         <p> Per Seat</p>
                     </div>
                 </div>
@@ -187,22 +188,22 @@
 
                     <div>
                         <div class="flex items-center lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="text-gray-600">A</kbd>
-                            <kbd class="kbd px-9 py-2 text-gray-600">A1</kbd>
+                            <h1 class="text-gray-600">A</h1>
+                            <kbd class="kbd px-9 py-2  text-gray-600">A1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">A2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">A3</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">A4</kbd>
                             
                           </div> 
                           <div class="flex items-center  lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="text-gray-600">B</kbd>
+                            <h1 class="text-gray-600">B</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">B1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">B2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">B3</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">B4</kbd>
                           </div> 
                           <div class="flex items-center lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="text-gray-600">C</kbd>
+                            <h1 class="text-gray-600">C</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">C1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">C2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">C3</kbd>
@@ -210,7 +211,7 @@
                             
                           </div>
                           <div class="flex items-center lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="">D</kbd>
+                            <h1 class="">D</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">D1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">D2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">D3</kbd>
@@ -218,7 +219,7 @@
                             
                           </div>
                           <div class="flex items-center  lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="text-gray-600">E</kbd>
+                            <h1 class="text-gray-600">E</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">E1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">E2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">E3</kbd>
@@ -226,7 +227,7 @@
                             
                           </div>
                           <div class="flex items-center  lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="text-gray-600">F</kbd>
+                            <h1 class="text-gray-600">F</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">F1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">F2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">F3</kbd>
@@ -234,15 +235,15 @@
                             
                           </div>
                           <div class="flex items-center  lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="text-gray-600">G</kbd>
+                            <h1 class="text-gray-600">G</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">G1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">G2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">G3</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">G4</kbd>
                             
                           </div>
-                          <div class="flex items-center  lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="text-gray-600">H</kbd>
+                          <div class="flex items-center   lg:gap-9 gap-3 my-4 w-full">
+                            <h1 class="text-gray-600">H</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">H1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">H2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">H3</kbd>
@@ -250,15 +251,15 @@
                             
                           </div>
                           <div class="flex items-center lg:gap-9 gap-3 my-4 w-full">
-                            <kbd class="">I</kbd>
-                            <kbd class="kbd px-9 py-2 text-gray-600">I1</kbd>
+                            <h1 class="text-gray-600">I</h1>
+                            <kbd class="kbd ml-1 px-9 py-2 text-gray-600">I1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">I2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">I3</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">I4</kbd>
                             
                           </div>
                           <div class="flex items-center lg:gap-9 gap-3 my-1 w-full">
-                            <kbd class="">J</kbd>
+                            <h1 class="text-gray-600">J</h1>
                             <kbd class="kbd px-9 py-2 text-gray-600">J1</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">J2</kbd>
                             <kbd class="kbd px-9 py-2 text-gray-600">J3</kbd>
@@ -267,30 +268,28 @@
                           </div>
                     </div>
                 </div>
-                <div class="lg:flex-1 lg:pl-6">
+                <div class="lg:flex-1 lg:pl-6 ">
                     <h1 class="text-2xl mb-3 border-b-2 border-dashed border-gray-300 pb-2 font-medium ">Select Your Seat</h1>
                     <div class="bg-gray-100  rounded-3xl py-4 px-7">
                         <span class="flex justify-between pb-3 border-b-2 border-dashed border-gray-300  font-medium ">
-                            <h1>Seat <span class="bg-[#1DD100] text-white px-2 rounded-lg">2</span></h1>
+                            <h1>Seat <span id="seatCount" class="bg-[#1DD100] text-white px-2 rounded-lg">0</span></h1>
                             <h1>Class</h1>
                             <h1>Price</h1>
                         </span>
-                        <span class="flex justify-between pb-1 pt-2 border-b-2  border-gray-300   ">
-                            <h1>Seat <span>2</span></h1>
-                            <h1>Class</h1>
-                            <h1>Price</h1>
+                        <span id="seatsContainer" class=" pb-1 pt-2 border-b-2   border-gray-300   ">
+                            
                         </span>
                         <span class="flex justify-between pt-3 font-medium pb-2">
                             <h1>Total Price</h1>
-                            <h1>BDT<span>1100</span></h1>
+                            <h1>BDT <span id="totalPriceContainer">0000</span></h1>
                         </span>
                         <span class="bg-white w-full  inline-block py-1 rounded-2xl">
-                            <input class="bg-none px-2 w-9/12  border-none outline-none" type="text"  placeholder="Have any Coppon?">
-                            <button class="px-7 rounded-2xl  py-3 ml-3 bg-[#1DD100]">Apply</button>
+                            <input class="bg-none px-2 lg:w-9/12  border-none outline-none" type="text"  placeholder="Have any Coppon?">
+                            <button class="px-7 rounded-2xl  py-3 lg:ml-3 bg-[#1DD100]">Apply</button>
                         </span>
                         <span class="flex justify-between py-2 font-medium">
                             <h1>Grand Total </h1> 
-                            <h1>BDT <span>1100</span></h1>
+                            <h1>BDT <span id="grandTotal">0000</span></h1>
                         </span>
                     </div>
                     <div class="mt-7">
@@ -298,16 +297,16 @@
                         <form class="flex flex-col">
                             <label class="text-lg font-medium pb-2" for="">Passenger Name<sup>*</sup></label>
                             <input class="border-2 px-3 py-3 rounded-xl mb-2" type="text" placeholder="Enter your name">
-                            <label class="text-lg font-medium pb-2" for="">Phone Number<sup>*</sup></label>
-                            <input class="border-2 px-3 py-3 rounded-xl mb-2" type="number" placeholder="Enter your name">
+                            <label class="text-lg font-medium pb-2" for="" >Phone Number<sup>*</sup></label>
+                            <input id="number" class="border-2 px-3 py-3 rounded-xl mb-2" type="number" placeholder="Enter your name">
                             <label class="text-lg font-medium pb-2" for="">Email Id<sup>*</sup></label>
                             <input class="border-2 px-3 py-3 rounded-xl mb-2" type="email" placeholder="Enter your name">
-                            <button class="py-4 text-white font-medium text-lg mb-2 rounded-xl mt-2  bg-[#1DD100]">Next</button>
+                            <button id="nextBtn"  class=" py-4  text-white font-medium text-lg mb-2 rounded-xl mt-2  bg-[#1DD100] " disabled >Next</button>
 
                         </form>
                         <div class="flex justify-between mt-2">
                             <p class="text-gray-500 border-b-2 border-gray-500">Terms and Conditions</p>
-                            <p class="text-gray-500 border-b-2 border-gray-500">Cancellation Policy</p>
+                            <p class="text-gray-500 border-b-2 border-gray-500 d">Cancellation Policy</p>
                         </div>
                     </div>
                 </div>
