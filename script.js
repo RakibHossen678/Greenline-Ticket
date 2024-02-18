@@ -4,8 +4,10 @@ const seatElement=document.querySelectorAll('.kbd')
 let count = 0;
 let seats = 40;
 let total=0;
+let seatName=[];
 for (const seat of seatElement) {
     seat.addEventListener('click',function(){
+        
 
         if(count<4){
             seat.classList.add('bg-[#1DD100]');
@@ -30,9 +32,6 @@ for (const seat of seatElement) {
         p3.innerText='550TK'
 
 
-      
-        // div.classList.add('leading-loose')
-        // div.classList.add('tracking-widest')
 
         div.appendChild(p)
         div.appendChild(p2)
@@ -48,23 +47,37 @@ for (const seat of seatElement) {
         const grandTotal=document.getElementById('grandTotal')
         grandTotal.innerText=total
 
-        // console.log( totalPriceContainer);
+        
+        
+        
+        if(!seatName.includes(Seat)){
+            seatName.push(Seat) 
+            
+            
+            
             
         }
+        else{
+            alert("You can't click it twice")
+            count -= 1
+            document.getElementById('seatCount').innerText= count
+            seats += 1
+            document.getElementById('seatsLeft').innerHTML=seats;
+           
+
+        }
+        
+
+        }
+        
         else{
             alert("You can't select more than 4")           
 
         }
-
-        
-        
-        
-        
-
-
-
-        
     })
+    
+
+   
     
 }
 
@@ -125,7 +138,10 @@ document.getElementById('applyBtn').addEventListener('click',function(){
             document.getElementById('grandTotal').innerText= total - parseInt(discounValue.innerText);
             document.getElementById('span').classList.add('hidden')                        
             document.getElementById('span2').classList.remove('hidden')                        
-        }       
+        }   
+        else{
+            alert('Invalid Cupon code')
+        }    
        
     }
     
