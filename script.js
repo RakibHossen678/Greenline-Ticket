@@ -63,6 +63,11 @@ for (const seat of seatElement) {
             document.getElementById('seatCount').innerText= count
             seats += 1
             document.getElementById('seatsLeft').innerHTML=seats;
+            div.classList.add('hidden')
+            total-=550
+            document.getElementById('totalPriceContainer').innerText = total
+
+            document.getElementById('grandTotal').innerText=total;
            
 
         }
