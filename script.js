@@ -100,6 +100,8 @@ let numValue;
 document.getElementById('number').addEventListener('keyup',function(e){
      numValue=(e.target.value)
      if(numValue.length >= 1 && count>=1){
+        document.getElementById('nextBtn').classList.remove('bg-gray-400')
+        document.getElementById('nextBtn').classList.add('bg-[#1DD100]')
         document.getElementById('nextBtn').removeAttribute('disabled');
        
     }
@@ -112,6 +114,9 @@ document.getElementById('inputText').addEventListener('keyup',function(e){
      if(count===4){
         if(numValue === 'NEW15' || numValue==='Couple 20'){
             document.getElementById('applyBtn').removeAttribute('disabled');
+            document.getElementById('applyBtn').classList.remove('bg-gray-400')
+        document.getElementById('applyBtn').classList.add('bg-[#1DD100]')
+
         }
 
      }
